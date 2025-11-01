@@ -19,3 +19,13 @@ let x = setInterval(() => {
     document.getElementById('minutos').innerText = Math.floor((distance % hour) / minute)
     document.getElementById('segundos').innerText = Math.floor((distance & minute) / seconds)
 }, seconds);
+
+const bancarios = document.getElementById('bancarios')
+
+function abrir(){
+bancarios.classList.remove('hide')
+}
+
+function cerrar(){
+    bancarios.classList.add('hide')
+}
